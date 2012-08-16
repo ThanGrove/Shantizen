@@ -1,0 +1,307 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body
+ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#page-wrapper {
+}
+
+#page-wrapper.simple, #page-wrapper.simple #page, #page-wrapper.simple #main-wrapper,
+#page-wrapper.simple #main, #page-wrapper.simple #content
+{
+  width: 775px !important;
+}
+
+#page {
+}
+
+/*
+ * Body, page, etc for Shiva Node add to make the page as wide as form
+ * 
+ */
+/*body.page-node-add-shivanode #page {
+  margin-left: -100px !important;
+  width: 1250px !important;
+}
+body.page-node-add-shivanode #page form {
+  width: 1200px !important;
+}*/
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/*
+ * Header
+ */
+#header {
+  color: white;
+}
+
+#header .section {
+  color: white;
+}
+
+#header a {
+  color: white !important;
+}
+
+#header a:active, #header a:visited {
+  color: white;
+  text-decoration: none !important;
+}
+
+#header a:hover {
+  text-decoration: underline;
+}
+
+#logo /* Wrapping link for logo */ {
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+
+#logo img {
+  vertical-align: bottom;
+}
+
+#name-and-slogan /* Wrapper for website name and slogan */ {
+  float: left;
+  padding-left: 16px;
+}
+
+h1#site-name,
+div#site-name /* The name of the website */ {
+  margin: 12px 0px 4px 0px;
+  font-size: 1.821em;
+  line-height: 1;
+  color: #f4eaec;
+  font-weight: normal;
+}
+
+#site-name a:link,
+#site-name a:visited {
+  color: #f4eaec;
+  font-weight: normal;
+}
+
+#site-name a:hover,
+#site-name a:focus {
+}
+
+#site-slogan /* The slogan (or tagline) of a website */ {
+  color: #f4eaec;
+  font-style: italic;
+}
+
+.region-header /* Wrapper for any blocks placed in the header region */ {
+  clear: both; /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+}
+
+#main {
+}
+
+/*
+ * Content
+ */
+#content {
+}
+
+#content .section {
+  padding: 6px 0px 0px 12px;
+}
+
+.sidebar .block {
+  background: #e4e5e5; /* #d1d3d5;*/
+  padding: 12px 18px 8px 14px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+
+.sidebar .block-title {
+  font-weight: bold;
+  font-size: 1em;
+  width: 100%;
+  margin: 0px 0px 8px 0px;
+  padding: 0px;
+  border-bottom: 1px solid #84959f;
+}
+.sidebar .block ul.menu {
+  margin: 0px 0px 0px 18px;
+  padding: 0px;
+}
+
+.region-highlighted {
+}
+
+.breadcrumb /* The path to the current page in the form of a list of links */ {
+  padding-bottom: 0; /* Undo system.css */
+}
+
+h1.title, /* The title of the page */
+h2.node-title, /* Title of a piece of content when it is given in a list of content */
+h2.block-title, /* Block title */
+h2.title, /* Comment section heading */
+h2.comment-form, /* Comment form heading */
+h3.title /* Comment title */ {
+  margin: 0;
+}
+
+tr.even /* Some tables have rows marked even or odd. */ {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
+  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+}
+
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.status /* Normal priority messages */ {
+}
+
+div.warning,
+tr.warning /* Medium priority messages */ {
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error /* High priority messages. See also the .error declaration below. */ {
+}
+
+.error /* Errors that are separate from div.messages status messages. */ {
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages. */ {
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+div.tabs /* See also the tabs.css file. */ {
+}
+
+.region-help /* Help text on a page */ {
+}
+
+.more-help-link /* Link to more help */ {
+}
+
+.region-content /* Wrapper for the actual page content */ {
+}
+
+ul.links /* List of links */ {
+}
+
+ul.links.inline {
+  display: block; /* Let the links be inline, but the container be a block. */
+}
+
+ul.links li {
+  padding: 0 1em 0 0; /* LTR */
+}
+
+.item-list .pager /* A list of page numbers when more than 1 page of content is available */ {
+  padding: 0;
+}
+
+.item-list .pager li /* Each page number in the pager list */ {
+  padding: 0 0.5em;
+}
+
+.feed-icon /* The link to the RSS or Atom feed for the current list of content */ {
+}
+
+.more-link /* Aggregator, blog, and forum more link */ {
+  padding: 6px 24px 0px 0px;
+  font-size: small;
+  font-style: italic;
+}
+
+.more-link:after {
+  content: '...';
+}
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+.region-sidebar-first {
+}
+
+.region-sidebar-first .section {
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+.region-sidebar-second {
+}
+
+.region-sidebar-second .section {
+}
+
+/*
+ * Footer
+ */
+.region-footer {
+	margin: 1px 0px 12px 0px;
+	border-top: 2px outset silver;
+  border-radius: 0px 0px 8px 8px;
+  -moz-border-radius: 0px 0px 8px 8px;
+	padding: 6px 12px;
+	font-size: smaller;
+}
+
+.region-footer h2 {
+	font-size: 10pt;
+}
+
+.region-footer ul {
+	margin-top: 0.25em;
+}
+/*
+ * Page bottom
+ */
+.region-bottom /* Wrapper for any blocks placed in the page bottom region */ {
+}
