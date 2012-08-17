@@ -185,3 +185,49 @@ h2.block-title /* Block title */ {
 #block-user-online /* "Who's online" block for a list of the online users */ {
 }
 
+/* First sidebar block styles */
+.region-sidebar-first .block {
+  margin-bottom: 8px !important;
+}
+
+.region-sidebar-first .block-title {
+  font-size: 1.15em;
+  width: 100%;
+  margin: 0px 0px 8px 0px;
+  padding: 0px;
+  border-bottom: 1px solid #84959F;
+}
+
+.region-sidebar-first .block ul {
+  margin-top: 3px;
+  margin-left: 0px;
+}
+
+.region-sidebar-first .block ul li {
+  list-style-type: none;
+  margin-left: -12px;
+  line-height: 175%;
+  font-size: small;
+}
+
+/* Second sidebar block styles */
+.region-sidebar-second .block {
+  background: #e4e5e5; /* #d1d3d5;*/
+  padding: 12px 18px 8px 14px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+
+.region-sidebar-second .block-title {
+  font-weight: bold;
+  font-size: 1em;
+  width: 100%;
+  margin: 0px 0px 8px 0px;
+  padding: 0px;
+  border-bottom: 1px solid #84959f;
+}
+
+.region-sidebar-second .block ul.menu {
+  margin: 0px 0px 0px 18px;
+  padding: 0px;
+}

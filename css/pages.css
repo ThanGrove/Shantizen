@@ -141,28 +141,12 @@ div#site-name /* The name of the website */ {
   padding: 6px 0px 0px 12px;
 }
 
-.sidebar .block {
-  background: #e4e5e5; /* #d1d3d5;*/
-  padding: 12px 18px 8px 14px;
-  border-radius: 8px;
-  -moz-border-radius: 8px;
-}
-
-.sidebar .block-title {
-  font-weight: bold;
-  font-size: 1em;
-  width: 100%;
-  margin: 0px 0px 8px 0px;
-  padding: 0px;
-  border-bottom: 1px solid #84959f;
-}
-.sidebar .block ul.menu {
-  margin: 0px 0px 0px 18px;
-  padding: 0px;
-}
-
 .region-highlighted {
 }
+
+body.front h1.title { display: none; } /* Hide Home Page header */
+body.front div.breadcrumb { display: none; } /* Hide Home Page header */
+
 
 .breadcrumb /* The path to the current page in the form of a list of links */ {
   padding-bottom: 0; /* Undo system.css */
@@ -267,6 +251,8 @@ ul.links li {
 }
 
 .region-sidebar-first .section {
+  margin-top: 18px;
+  margin-left: 24px;
 }
 
 /*
