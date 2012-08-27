@@ -438,6 +438,10 @@ sup {
   display: inline !important;
 }
 
+.noborder, .noborder table {
+  border: none !important;
+}
+
 /* Module Resets:
      The following CSS adjusts or overrides the CSS for specific modules of Drupal Core or otherwise*/
 
