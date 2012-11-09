@@ -94,9 +94,13 @@ body.page-node-add-shivanode #page form {
   padding-left: 16px;
 }
 
+#name-and-slogan *:first-child {
+  margin: 12px 0px 4px 0px;
+}
+
 h1#site-name,
 div#site-name /* The name of the website */ {
-  margin: 12px 0px 4px 0px;
+  /*margin: 12px 0px 4px 0px;*/
   font-size: 1.821em;
   line-height: 1;
   color: #f4eaec;
@@ -115,7 +119,10 @@ div#site-name /* The name of the website */ {
 
 #site-slogan /* The slogan (or tagline) of a website */ {
   color: #f4eaec;
-  font-style: italic;
+  /*font-style: italic;*/
+  font-size: 12pt;
+  letter-spacing: 0.1em;
+  padding-top: 6px;
 }
 
 .region-header /* Wrapper for any blocks placed in the header region */ {
