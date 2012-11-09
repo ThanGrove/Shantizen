@@ -154,6 +154,25 @@ div#site-name /* The name of the website */ {
 body.front h1.title { display: none; } /* Hide Home Page header */
 body.front div.breadcrumb { display: none; } /* Hide Home Page header */
 
+body.front h2.pane-title {
+  font-size: 1.15em;
+  width: 100%;
+  margin: 12px 0px 8px 0px;
+  padding: 0px;
+  border-bottom: 1px solid #84959F;
+}
+
+body.front div#front-tags {
+  background: #E4E5E5;
+  margin-top: 12px;
+  padding: 12px 18px 8px 14px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+
+body.front div#front-tags h2.pane-title {
+  margin-top: 0px;
+}
 
 .breadcrumb /* The path to the current page in the form of a list of links */ {
   padding-bottom: 0; /* Undo system.css */
