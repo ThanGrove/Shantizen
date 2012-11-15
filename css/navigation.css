@@ -60,6 +60,12 @@ li a.active {
  */
 #main-menu {
 }
+
+
+#navigation ul#main-menu li.active a {
+  color: white;
+}
+
 /*
 #main-menu a {
   text-decoration: none !important;
