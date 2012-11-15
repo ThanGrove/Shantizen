@@ -61,9 +61,8 @@ li a.active {
 #main-menu {
 }
 
-
 #navigation ul#main-menu li.active a {
-  color: white;
+  color: white !important;
 }
 
 /*
