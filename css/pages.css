@@ -163,7 +163,7 @@ body.front h2.pane-title {
 }
 
 body.front div#front-tags {
-  background: #E4E5E5;
+  /*background: #E4E5E5;*/
   margin-top: 12px;
   padding: 12px 18px 8px 14px;
   border-radius: 8px;
