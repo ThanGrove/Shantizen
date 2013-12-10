@@ -102,7 +102,6 @@ global $user;
       </div><!-- /#name-and-slogan -->
     <?php endif; ?>
     <?php
-      // Add the Hello, u\n! to header.
       if($user->uid > 0 && isset($user->name)) {
         $udata = user_load($user->uid);
         $disname = (isset($udata->field_fname['und']))? $udata->field_fname['und'][0]['value']:$user->name;
@@ -129,7 +128,8 @@ global $user;
 
     <?php if ($page['navigation'] || $main_menu): ?>
       <div id="navigation"><div class="section clearfix">
-        <?php print theme('links__system_main_menu', array(
+
+        <?php /* print theme('links__system_main_menu', array(
           'links' => $main_menu,
           'attributes' => array(
             'id' => 'main-menu',
@@ -140,7 +140,8 @@ global $user;
             'level' => 'h2',
             'class' => array('element-invisible'),
           ),
-        )); ?>
+        ));*/ ?>
+
         <?php print render($page['navigation']); ?>
 
       </div></div><!-- /.section, /#navigation -->

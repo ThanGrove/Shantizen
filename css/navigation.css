@@ -88,3 +88,41 @@ li a.active {
  */
 .block-menu-block {
 }
+
+
+/** Facets **/
+
+.block-facetapi {
+    background-color: #E8E8E8;
+    border: thin solid #777777;
+    left: -5%;
+    margin-top: 0 !important;
+    width: 110%;
+}
+
+.block-facetapi h2.block-title {
+  background-color: #B8B8B8;
+  font-size: 100%;
+  padding: 3px 6px;
+  width: 93%;
+}
+
+.block-facetapi ul.facetapi-facetapi-links {
+  padding-left: 12px;
+  margin-bottom: 0px;
+}
+
+.block-facetapi ul.facetapi-facetapi-links li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.block-facetapi .item-list {
+  padding-bottom: 6px;
+}
+
+.block-facetapi .facetapi-limit-link {
+  font-size: 90%;
+  padding-left: 50%;
+}
